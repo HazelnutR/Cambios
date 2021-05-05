@@ -38,6 +38,7 @@ namespace Cambios
             this.btn_Convert = new System.Windows.Forms.Button();
             this.lbl_Resultado = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -117,11 +118,19 @@ namespace Cambios
             this.lbl_Status.TabIndex = 8;
             this.lbl_Status.Text = "status";
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(608, 227);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(123, 23);
+            this.progressBar1.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 262);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lbl_Status);
             this.Controls.Add(this.lbl_Resultado);
             this.Controls.Add(this.btn_Convert);
@@ -150,6 +159,7 @@ namespace Cambios
         private System.Windows.Forms.Button btn_Convert;
         private System.Windows.Forms.Label lbl_Resultado;
         private System.Windows.Forms.Label lbl_Status;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
