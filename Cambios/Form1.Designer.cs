@@ -39,6 +39,7 @@ namespace Cambios
             this.lbl_Resultado = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.btn_Troca = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,12 +94,14 @@ namespace Cambios
             // 
             // btn_Convert
             // 
+            this.btn_Convert.Enabled = false;
             this.btn_Convert.Location = new System.Drawing.Point(608, 32);
             this.btn_Convert.Name = "btn_Convert";
             this.btn_Convert.Size = new System.Drawing.Size(123, 36);
             this.btn_Convert.TabIndex = 6;
             this.btn_Convert.Text = "Converter";
             this.btn_Convert.UseVisualStyleBackColor = true;
+            this.btn_Convert.Click += new System.EventHandler(this.btn_Convert_Click);
             // 
             // lbl_Resultado
             // 
@@ -125,11 +128,23 @@ namespace Cambios
             this.progressBar1.Size = new System.Drawing.Size(123, 23);
             this.progressBar1.TabIndex = 9;
             // 
+            // btn_Troca
+            // 
+            this.btn_Troca.Enabled = false;
+            this.btn_Troca.Location = new System.Drawing.Point(608, 98);
+            this.btn_Troca.Name = "btn_Troca";
+            this.btn_Troca.Size = new System.Drawing.Size(123, 71);
+            this.btn_Troca.TabIndex = 10;
+            this.btn_Troca.Text = "Troca";
+            this.btn_Troca.UseVisualStyleBackColor = true;
+            this.btn_Troca.Click += new System.EventHandler(this.btn_Troca_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 262);
+            this.Controls.Add(this.btn_Troca);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lbl_Status);
             this.Controls.Add(this.lbl_Resultado);
@@ -160,6 +175,7 @@ namespace Cambios
         private System.Windows.Forms.Label lbl_Resultado;
         private System.Windows.Forms.Label lbl_Status;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button btn_Troca;
     }
 }
 

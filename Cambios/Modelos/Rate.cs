@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cambios.Modelos
 {
-    class Rate
+    public class Rate
     {
         public int RateId { get; set; }
         public string Code { get; set; }
